@@ -10,14 +10,18 @@ f = 0;
 op = 0;
 gconvert = 0;
 
-//PERGUNTAS 
-Console.WriteLine("1 - CELSIUS -> FAHRENHEIT");
-Console.WriteLine("2 - FAHRENHEIT -> CELSIUS");
-op = int.Parse(Console.ReadLine());
-
 //WHILE
 while (sim == "S" || sim == "s")
 {
+    //VERSÃO
+    Console.WriteLine("=====================================================");
+    Console.WriteLine("================= CONVERSÃO V.1.0 ===================");
+    Console.WriteLine("=====================================================");
+
+    //PERGUNTAS 
+    Console.WriteLine("\n\n1 - CELSIUS -> FAHRENHEIT");
+    Console.WriteLine("2 - FAHRENHEIT -> CELSIUS");
+    op = int.Parse(Console.ReadLine());
 
     //SWITCH
     switch (op)
@@ -35,6 +39,9 @@ while (sim == "S" || sim == "s")
 
             Console.WriteLine("A conversão deu: " + gconvert + " FAHRENHEIT");
 
+            Console.WriteLine("\n\nCLIQUE ENTER PARA CONTINUAR");
+            Console.ReadLine();
+
             break;
 
         case 2:
@@ -48,6 +55,9 @@ while (sim == "S" || sim == "s")
             Console.Clear();
 
             Console.WriteLine("A conversão deu: " + fconvert + " FAHRENHEIT");
+
+            Console.WriteLine("\n\nCLIQUE ENTER PARA CONTINUAR");
+            Console.ReadLine();
 
             break;
     }
